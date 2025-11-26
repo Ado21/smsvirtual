@@ -1,0 +1,279 @@
+
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOUuhs.ttf) format('truetype')
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype')
+}
+
+
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: .2px;
+	font-size: 18px;
+	color: #171b24;
+	cursor: default;
+	text-rendering: auto!important;
+	font-smooth: auto!important;
+	margin: 0;
+	padding: 0;
+	-moz-osx-font-smoothing: grayscale!important;
+	-webkit-font-smoothing: antialiased!important;
+	-webkit-text-size-adjust: none
+}
+
+body.hide-scroll {
+	overflow: hidden
+}
+
+body.dark-theme {
+	color: #fff
+}
+
+* {
+	-webkit-tap-highlight-color: transparent
+}
+
+*,
+:after,
+:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+a {
+	color: #171b24;
+	text-decoration: none
+}
+
+a:active,
+a:focus,
+a:hover,
+a:visited {
+	text-decoration: none;
+	color: inherit
+}
+
+a {
+	text-decoration: underline;
+	color: #5184d8
+}
+
+p {
+	margin: 0 0 20px;
+	font-size: 18px;
+	line-height: 28px;
+	min-height: 28px
+}
+
+h1,
+h2,
+h3,
+h4 {
+	padding: 0;
+	line-height: normal;
+	min-height: 28px;
+	margin: 0 0 20px
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 50px
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 35px;
+	min-height: 35px
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 28px
+}
+
+h4 {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 28px
+}
+
+ol,
+ul {
+	padding-left: 0;
+	list-style: none;
+	margin: 0 0 20px
+}
+
+ol li,
+ul li {
+	font-size: 17px;
+	line-height: 30px;
+	margin-bottom: 15px;
+	padding-left: 45px;
+	position: relative
+}
+
+ol li:last-child,
+ul li:last-child {
+	margin-bottom: 0!important
+}
+
+ul li:before {
+	content: '';
+	border-left: 10px solid transparent;
+	border-top-style: solid;
+	border-top-width: 10px;
+	border-top-color: #5184d8;
+	position: absolute;
+	top: 8px;
+	left: 0
+}
+
+ol {
+	counter-reset: my-counter
+}
+
+ol li {
+	counter-increment: my-counter
+}
+
+ol li:before {
+	content: counter(my-counter) ". ";
+	font-weight: 600;
+	color: #5184d8;
+	position: absolute;
+	left: 0;
+	top: 0
+}
+
+img {
+	max-width: 100%!important;
+	height: auto;
+	margin-bottom: 12px;
+	cursor: pointer
+}
+
+img[style*="float: left"] {
+	margin-right: 12px
+}
+
+img[style*="float: right"] {
+	margin-left: 12px
+}
+
+blockquote {
+	margin: 0;
+	padding-left: 45px;
+	border-left: 3px solid #5184d8
+}
+
+pre {
+	margin: 0 0 20px;
+	padding: 14px;
+	border: 1px solid #dcdcdc;
+	border-radius: 2px;
+	background: #f3f3f3!important;
+	font-size: 14px;
+	overflow: auto;
+	max-height: 400px;
+	cursor: text
+}
+
+iframe {
+	display: block;
+	outline: 0;
+	border: 0;
+	max-width: 100%;
+	width: 100%!important;
+	height: 400px!important
+}
+
+table {
+	max-width: none;
+	min-width: 0;
+	width: 100%;
+	border-collapse: collapse;
+	border-style: solid;
+	border-color: #d0c5c5;
+	margin: 0;
+	line-height: 30px
+}
+
+.table-wrapper {
+	margin: 0 0 20px;
+	width: 100%;
+	overflow: auto
+}
+
+.infobox {
+	display: block;
+	width: 100%;
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: .2px;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	border-left: 5px solid;
+	padding: 10px 20px;
+	margin: 0 0 20px
+}
+
+.infobox p {
+	margin: 0 0 20px;
+	font-size: inherit;
+	line-height: inherit
+}
+
+.infobox p:last-child {
+	margin: 0!important
+}
+
+.infobox.info {
+	background: #cce5ff;
+	color: #426eb6;
+	border-color: #5494db
+}
+
+.infobox.note {
+	background-color: #fff2d0;
+	color: #836a27;
+	border-color: #f9c741
+}
+
+.infobox.warning {
+	background-color: #f7d7db;
+	color: #732f37;
+	border-color: #f86d7d
+}
+
+.infobox.tip {
+	background-color: #d5ecda;
+	color: #316f41;
+	border-color: #4ec96e
+}
+
